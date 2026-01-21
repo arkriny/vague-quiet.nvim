@@ -5,8 +5,8 @@ if vim.fn.has("syntax_on") then
 end
 
 local c = {
-	bg = "#141415",
-	fg = "#cdcdcd",
+	background = "#141415",
+	foreground = "#cdcdcd",
 	line = "#252530",
 	comment = "#606079",
 	warning = "#e8b589",
@@ -28,7 +28,7 @@ hl("Added", { fg = c.plus })
 hl("Changed", { fg = c.warning })
 hl("ColorColumn", { bg = c.line })
 hl("Conceal", {})
-hl("CurSearch", { fg = c.fg, bg = c.search })
+hl("CurSearch", { fg = c.foreground, bg = c.search })
 hl("CursorColumn", { bg = c.line })
 hl("CursorLine", { bg = c.line })
 hl("CursorLineNr", {})
@@ -41,24 +41,24 @@ hl("ErrorMsg", { fg = c.error })
 hl("FloatBorder", { fg = c.comment })
 hl("FoldColumn", { fg = c.comment })
 hl("Folded", { fg = c.comment, bg = c.line })
-hl("IncSearch", { fg = c.bg, bg = c.search })
+hl("IncSearch", { fg = c.background, bg = c.search })
 hl("LineNr", { fg = c.comment })
-hl("MatchParen", { fg = c.fg, bg = c.visual })
+hl("MatchParen", { fg = c.foreground, bg = c.visual })
 hl("ModeMsg", {})
 hl("MoreMsg", {})
-hl("MsgSeparator", { fg = c.fg, bg = c.line })
+hl("MsgSeparator", { fg = c.foreground, bg = c.line })
 hl("NonText", { fg = c.comment })
-hl("Normal", { fg = c.fg, bg = c.bg })
+hl("Normal", { fg = c.foreground, bg = c.background })
 hl("NormalFloat", {})
 hl("OkMsg", { fg = c.plus })
 hl("Pmenu", {})
 hl("PmenuBorder", { fg = c.comment })
-hl("PmenuSel", { fg = c.fg, bg = c.line })
+hl("PmenuSel", { fg = c.foreground, bg = c.line })
 hl("PmenuThumb", { bg = c.comment })
 hl("Question", {})
 hl("QuickFixLine", { bg = c.line })
 hl("Removed", { fg = c.error })
-hl("Search", { fg = c.fg, bg = c.search })
+hl("Search", { fg = c.foreground, bg = c.search })
 hl("SignColumn", {})
 hl("SpecialKey", { fg = c.comment })
 hl("SpellBad", { undercurl = true })
@@ -69,21 +69,21 @@ hl("StatusLine", {})
 hl("StatusLineNC", { fg = c.comment })
 hl("StatusLineTerm", {})
 hl("StatusLineTermNC", { fg = c.comment })
-hl("TabLine", { fg = c.fg, bg = c.line })
+hl("TabLine", { fg = c.foreground, bg = c.line })
 hl("TabLineFill", { fg = c.comment, bg = c.line })
-hl("TabLineSel", { fg = c.bg, bg = c.fg })
+hl("TabLineSel", { fg = c.background, bg = c.foreground })
 hl("Terminal", {})
 hl("Title", {})
 hl("Visual", { bg = c.visual })
 hl("VisualNOS", { bg = c.comment, undercurl = true })
 hl("WarningMsg", {})
 hl("Whitespace", { fg = c.line })
-hl("WildMenu", { fg = c.bg, bg = c.fg })
-hl("WinBar", { fg = c.fg, bg = c.line })
+hl("WildMenu", { fg = c.background, bg = c.foreground })
+hl("WinBar", { fg = c.foreground, bg = c.line })
 hl("WinBarNC", { fg = c.comment })
 hl("WinSeparator", { fg = c.comment })
-hl("debugBreakpoint", { fg = c.bg, bg = c.fg })
-hl("debugPC", { fg = c.bg, bg = c.fg })
+hl("debugBreakpoint", { fg = c.background, bg = c.foreground })
+hl("debugPC", { fg = c.background, bg = c.foreground })
 hl("qfError", { fg = c.error })
 
 hl("Comment", { fg = c.comment })
@@ -123,7 +123,7 @@ vim.g.terminal_color_3 = c.warning
 vim.g.terminal_color_4 = "#6e94b2"
 vim.g.terminal_color_5 = "#bb9dbd"
 vim.g.terminal_color_6 = "#aeaed1"
-vim.g.terminal_color_7 = c.fg
+vim.g.terminal_color_7 = c.foreground
 vim.g.terminal_color_8 = c.comment
 vim.g.terminal_color_9 = "#e08398"
 vim.g.terminal_color_10 = "#99b782"
