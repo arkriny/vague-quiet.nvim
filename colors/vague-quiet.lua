@@ -109,14 +109,14 @@ hl("Type", {})
 hl("@variable", {})
 
 hl("DiagnosticError", { fg = c.error })
-hl("DiagnosticHint", { fg = c.string })
-hl("DiagnosticInfo", { fg = c.string })
+hl("DiagnosticHint", { fg = c.hint })
+hl("DiagnosticInfo", { fg = c.constant })
 hl("DiagnosticOk", { fg = c.plus })
 hl("DiagnosticWarn", { fg = c.string })
 
 hl("DiagnosticUnderlineError", { undercurl = true, sp = c.error })
-hl("DiagnosticUnderlineHint", { undercurl = true, sp = c.string })
-hl("DiagnosticUnderlineInfo", { undercurl = true, sp = c.string })
+hl("DiagnosticUnderlineHint", { undercurl = true, sp = c.hint })
+hl("DiagnosticUnderlineInfo", { undercurl = true, sp = c.constant })
 hl("DiagnosticUnderlineOk", { undercurl = true, sp = c.plus })
 hl("DiagnosticUnderlineWarn", { undercurl = true, sp = c.string })
 
