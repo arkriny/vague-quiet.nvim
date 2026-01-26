@@ -9,7 +9,7 @@ local c = {
 	foreground = "#cdcdcd",
 	line = "#252530",
 	comment = "#606079",
-	warning = "#e8b589",
+	string = "#e8b589",
 	visual = "#333738",
 	error = "#d8647e",
 	search = "#405065",
@@ -25,7 +25,7 @@ local function hl(group, opts)
 end
 
 hl("Added", { fg = c.plus })
-hl("Changed", { fg = c.warning })
+hl("Changed", { fg = c.string })
 hl("ColorColumn", { bg = c.line })
 hl("Conceal", {})
 hl("CurSearch", { fg = c.foreground, bg = c.search })
@@ -36,7 +36,7 @@ hl("DiffAdd", { bg = c.diffAdd })
 hl("DiffChange", { bg = c.diffChange })
 hl("DiffDelete", { bg = c.diffDelete })
 hl("DiffText", { bg = c.diffText })
-hl("Directory", { fg = c.warning })
+hl("Directory", { fg = c.string })
 hl("ErrorMsg", { fg = c.error })
 hl("FloatBorder", { fg = c.comment })
 hl("FloatShadow", { bg = c.visual, blend = 80 })
@@ -98,30 +98,30 @@ hl("Operator", {})
 hl("PreProc", {})
 hl("Special", {})
 hl("Statement", {})
-hl("String", { fg = c.warning })
+hl("String", { fg = c.string })
 hl("Todo", { fg = c.plus })
 hl("Type", {})
 
 hl("@variable", {})
 
 hl("DiagnosticError", { fg = c.error })
-hl("DiagnosticHint", { fg = c.warning })
-hl("DiagnosticInfo", { fg = c.warning })
+hl("DiagnosticHint", { fg = c.string })
+hl("DiagnosticInfo", { fg = c.string })
 hl("DiagnosticOk", { fg = c.plus })
-hl("DiagnosticWarn", { fg = c.warning })
+hl("DiagnosticWarn", { fg = c.string })
 
 hl("DiagnosticUnderlineError", { undercurl = true, sp = c.error })
-hl("DiagnosticUnderlineHint", { undercurl = true, sp = c.warning })
-hl("DiagnosticUnderlineInfo", { undercurl = true, sp = c.warning })
+hl("DiagnosticUnderlineHint", { undercurl = true, sp = c.string })
+hl("DiagnosticUnderlineInfo", { undercurl = true, sp = c.string })
 hl("DiagnosticUnderlineOk", { undercurl = true, sp = c.plus })
-hl("DiagnosticUnderlineWarn", { undercurl = true, sp = c.warning })
+hl("DiagnosticUnderlineWarn", { undercurl = true, sp = c.string })
 
 hl("LspReferenceText", { bg = c.comment })
 
 vim.g.terminal_color_0 = c.line
 vim.g.terminal_color_1 = c.error
 vim.g.terminal_color_2 = c.plus
-vim.g.terminal_color_3 = c.warning
+vim.g.terminal_color_3 = c.string
 vim.g.terminal_color_4 = "#6e94b2"
 vim.g.terminal_color_5 = "#bb9dbd"
 vim.g.terminal_color_6 = "#aeaed1"
