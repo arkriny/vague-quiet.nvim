@@ -103,7 +103,7 @@ hl("PreProc", {})
 hl("Special", {})
 hl("Statement", {})
 hl("String", { fg = c.string })
-hl("Todo", { fg = c.plus })
+hl("Todo", {})
 hl("Type", {})
 
 hl("@variable", {})
