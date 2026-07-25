@@ -6,22 +6,22 @@ end
 
 local c = {
 	background = '#141415',
-	foreground = '#CDCDCD',
+	foreground = '#cdcdcd',
 	line = '#252530',
 	comment = '#606079',
-	string = '#E8B589',
-	constant = '#AEAED1',
-	parameter = '#BB9DBD',
+	string = '#e8b589',
+	constant = '#aeaed1',
+	parameter = '#bb9dbd',
 	visual = '#333738',
-	error = '#D8647E',
-	hint = '#7E98E8',
-	keyword = '#6E94B2',
+	error = '#d8647e',
+	hint = '#7e98e8',
+	keyword = '#6e94b2',
 	search = '#405065',
-	plus = '#7FA563',
+	plus = '#7fa563',
 	diffAdd = '#293125',
-	diffChange = '#41362A',
-	diffText = '#6D583E',
-	diffDelete = '#3B242A',
+	diffChange = '#41362a',
+	diffText = '#6d583e',
+	diffDelete = '#3b242a',
 }
 
 local function hl(group, opts)
@@ -126,10 +126,10 @@ vim.g.terminal_color_5 = c.parameter
 vim.g.terminal_color_6 = c.constant
 vim.g.terminal_color_7 = c.foreground
 vim.g.terminal_color_8 = c.comment
-vim.g.terminal_color_9 = '#E08398'
-vim.g.terminal_color_10 = '#99B782'
-vim.g.terminal_color_11 = '#F5CB96'
-vim.g.terminal_color_12 = '#8BA9C1'
-vim.g.terminal_color_13 = '#C9B1CA'
-vim.g.terminal_color_14 = '#BEBEDA'
-vim.g.terminal_color_15 = '#D7D7D7'
+vim.g.terminal_color_9 = '#e08398'
+vim.g.terminal_color_10 = '#99b782'
+vim.g.terminal_color_11 = '#f5cb96'
+vim.g.terminal_color_12 = '#8ba9c1'
+vim.g.terminal_color_13 = '#c9b1ca'
+vim.g.terminal_color_14 = '#bebeda'
+vim.g.terminal_color_15 = '#d7d7d7'
