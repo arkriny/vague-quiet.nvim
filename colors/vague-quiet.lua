@@ -1,5 +1,5 @@
-vim.g.colors_name = 'vague-quiet'
 vim.cmd.highlight('clear')
+vim.g.colors_name = 'vague-quiet'
 
 local c = {
 	background = '#141415',
