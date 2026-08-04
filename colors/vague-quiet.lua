@@ -1,4 +1,6 @@
-vim.cmd.highlight('clear')
+-- Only clear highlight groups if another colorscheme was already loaded.
+-- This improves startup time if the colorscheme is loaded in init.lua.
+if vim.g.colors_name then vim.cmd.highlight('clear') end
 vim.g.colors_name = 'vague-quiet'
 
 local c = {
